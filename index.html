@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lesson 01 Assignment</title>
+
+	<style type="text/css">
+		body {
+			font-family: arial;
+			width: 90%;
+			margin: 2%;
+		}
+
+		label, legend {
+			font-weight: bold;
+		}
+
+	</style>
+
+
+</head>
+<body>
+
+<!-- REQUIREMENTS
+
+150 words on importance of RWD
+4 types of input, 2 required inputs included
+Valid HTML
+Live on GH Pages -->
+
+<h3>The Importance of Responsive Web Design</h3>
+<p>
+Responsive web design (RWD) enables users to have seamless experiences between different devices. This means that users can visit the same url and still have a consistent interactions on the website. Having separate sites for each experiences can make navigating the site harder because the patterns are not the same. When a user goes from desktop to mobile, or vice versa, they will likely assume the interactions are similar. </p>
+
+<p>Allowing the content to adapt to different screen sizes also makes content more accessible and readable. For example, there is less screen space on a mobile device so images need to become larger than on a desktop or they will be difficult to view.</p>
+
+<p>Another impact is that websites become more manageable because only one version of code needs to be maintained rather than two (more mobile and web) due to breakpoints and other contexts for responsiveness. </p>
+
+<form>
+	<h3>Take my survey!</h3>
+  	<label for="first-name">Name</label> 
+  	<input required type="text" name="first-name" id="first-name" class="text-input" /> <br />
+	
+  	<label for="email">What is your email address?</label>
+  	<input required type="email" name="email" id="email" /> <br /><br />
+
+  	<fieldset>
+  		<legend>Do you use RWD?</legend>
+	    <input type="radio" name="RWD" value="yes" id="RWD-yes" />
+	    <label for="RWD-yes">Yes</label>
+	    <input type="radio" name="RWD" value="no" id="RWD-no" />
+	    <label for="RWD-no">No</label>
+  	</fieldset> <br />
+
+    <fieldset>
+    	<legend>Which is more important?</legend>
+	    <input type="checkbox" name="user[]" value="int" id="user-int"/>
+	    <label for="user-int">UI</label>
+	    <input type="checkbox" name="user[]" value="exp" id="user-exp" />
+	    <label for="user-exp">UX</label>
+ 	 </fieldset> <br />
+	
+	<label for="website">What is your favorite website?</label> 
+    <input type="url" name="website" id="website" /> <br /> <br />
+	
+	<label for="comments">What makes it memorable?</label> <br />
+  	<textarea rows="10" cols="60" name="comments" id="comments">This is a textarea...</textarea> <br />
+
+	<input type="submit" name="submit" value="Submit!" />
+
+
+</form>
+
+</body>
+</html>
